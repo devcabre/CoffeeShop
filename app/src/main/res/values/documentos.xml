@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="doc">
+        <item>Seleccione tipo de documento...</item>
+        <item>Consumidor final</item>
+        <item>Factura con datos</item>
+    </string-array>
+    
+</resources>

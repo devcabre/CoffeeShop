@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnPagar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        tools:ignore="ScrollViewSize">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coffee Shop"
+            android:textColor="#FFAB40"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/txtEntrega"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Seleccione Entrega"
+            tools:ignore="Autofill,HardcodedText,LabelFor,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rbtn_recoger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recoger"
+                tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+            <RadioButton
+                android:id="@+id/rbtn_domicilio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entrega a domicilio $4"
+                tools:ignore="HardcodedText,VisualLintButtonSize" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtcafes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cafés"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/imgcafe"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:src="@drawable/cafe1"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chkMacciato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Macciatto $3"
+                    tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+                <CheckBox
+                    android:id="@+id/chkExpresso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Expresso $2.5"
+                    tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:ignore="InefficientWeight">
+
+                <CheckBox
+                    android:id="@+id/chkAmericano"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Americano $1.5"
+                    tools:ignore="HardcodedText,NestedWeights,VisualLintButtonSize" />
+
+                <CheckBox
+                    android:id="@+id/chkCapuccino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Capuccino $5"
+                    tools:ignore="HardcodedText,VisualLintButtonSize" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dulces"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/imgdulce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dulces1"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chkBrownie"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Brownie $2.5"
+                    tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+                <CheckBox
+                    android:id="@+id/chkDonut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Donut $4"
+                    tools:ignore="HardcodedText,VisualLintButtonSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chkDulceLeche"
+                    android:layout_width="87dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dulce de leche $1"
+                    tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+                <CheckBox
+                    android:id="@+id/chkChocolate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Chocolates $3"
+                    tools:ignore="HardcodedText,VisualLintButtonSize" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCalcular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="calcular"
+                    android:text="Calcular"
+                    tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/btnCancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="cancelar"
+                    android:text="Cancelar"
+                    tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/sptipodoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/doc"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total a pagar"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnPagarcuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pagar" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
